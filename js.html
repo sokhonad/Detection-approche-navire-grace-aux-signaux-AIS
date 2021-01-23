@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hello World!</title>
+<meta charset="utf-8">
+</head>
+<body>
+<script>
+
+		var age, message, i;
+
+		age = parseInt(prompt("Donnez votre age : "));
+
+		if (age >= 1 && age <= 17)
+
+		{
+			message = "Vous n'êtes pas encore majeur";
+		}
+
+		else
+
+		{
+			if (age >= 18 && age <= 49)
+
+			{
+				message = "Vous êtes majeur mais pas encore sénior";
+			}
+
+			else
+
+			{
+				if (age >=50 && age <= 59)
+
+				{
+					message = "Vous êtes sénior mais encore retraité";
+				}
+
+				else
+
+				{
+					if (age >= 60 && age <= 120)
+
+					{
+						message ="Vous êtes retraité, profitez de votre temps libre.";
+					}
+
+					else
+
+					{
+						message = "On ne sait que dire concernant votre catégorie d'âge.";
+					}
+				}
+			
+			}	
+		}
+
+		alert(message);
+	
+</script>
+</body>
+</html>
